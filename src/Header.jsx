@@ -9,8 +9,8 @@ function Header() {
 
         <div className="header-right">
           <div className="header-content">
-            <h1>Kiel</h1>
-            <p className="subtitle"> Computer Engineer | ISC2 Certified in Cybersecurity</p>
+            <h1>Kiel Joshua P. Lozada</h1>
+            <p className="subtitle">Computer Engineer | ISC2 Certified in Cybersecurity (CC)</p>
           </div>
           
           <nav className="header-nav">
