@@ -764,140 +764,715 @@ section p {
 
 /* ====== RESPONSIVE - TABLET ====== */
 @media (max-width: 768px) {
+  .header-new {
+    padding: 20px 15px;
+  }
+
   .header-container {
     flex-direction: column;
     text-align: center;
-    gap: 20px;
+    gap: 15px;
+    padding: 0 10px;
   }
 
   .header-right {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
+    width: 100%;
   }
 
   .header-content h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    margin-bottom: 8px;
   }
 
   .subtitle {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.3;
   }
 
   .profile-pic {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
   }
 
   .header-nav {
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
+    flex-wrap: wrap;
+    width: 100%;
   }
 
   .header-nav a {
-    padding: 10px 15px;
-    font-size: 0.9rem;
+    padding: 10px 14px;
+    font-size: 0.85rem;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 6px;
   }
 
   section {
     padding: 40px 15px;
+    max-width: 100%;
   }
 
   section h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  section h2::after {
+    width: 50px;
+  }
+
+  section p {
+    font-size: 1rem;
+  }
+
+  .projects-category h3 {
+    font-size: 1.5rem;
   }
 
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 15px;
+    justify-items: center;
+  }
+
+  .project-card-enhanced {
+    max-width: 100%;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .project-header h4 {
+    font-size: 1.1rem;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
   }
 
   .highlights {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    margin-top: 20px;
+  }
+
+  .highlight-item {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .highlight-item .icon {
+    font-size: 1.5rem;
+  }
+
+  .highlight-item strong {
+    font-size: 0.9rem;
+  }
+
+  .highlight-item p {
+    font-size: 0.85rem;
   }
 
   .overview-items {
     grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .overview-item {
+    padding: 15px;
+  }
+
+  .overview-item .icon {
+    font-size: 1.6rem;
+  }
+
+  .overview-item strong {
+    font-size: 0.9rem;
+  }
+
+  .overview-item p {
+    font-size: 0.9rem;
   }
 
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .skill-tag {
+    padding: 10px 15px;
+    font-size: 0.9rem;
   }
 
   .certs-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .cert-item {
+    padding: 15px;
+  }
+
+  .cert-icon {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+
+  .cert-item strong {
+    font-size: 0.9rem;
+  }
+
+  .cert-item p {
+    font-size: 0.85rem;
+  }
+
+  .experience-item {
+    padding: 15px;
+    margin-bottom: 15px;
   }
 
   .exp-header {
     flex-direction: column;
     align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 10px;
   }
 
-  .pokemon img {
-    width: 80px;
-    height: 80px;
+  .exp-header h4 {
+    font-size: 1.05rem;
+  }
+
+  .exp-date {
+    font-size: 0.8rem;
+    width: auto;
+  }
+
+  .exp-company {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+  }
+
+  .exp-details li {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+  }
+
+  .resume-container {
+    padding: 15px;
+  }
+
+  .download-section {
+    margin: 20px 0;
+    padding: 15px 0;
+  }
+
+  .download-btn {
+    padding: 12px 30px;
+    font-size: 0.95rem;
+  }
+
+  .download-note {
+    font-size: 0.85rem;
+  }
+
+  .resume-section {
+    margin: 20px 0;
+    padding: 15px 0;
+  }
+
+  .resume-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+
+  .summary-text {
+    padding: 15px;
+    font-size: 0.95rem;
+  }
+
+  .skills-category h5 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .edu-highlights {
+    padding: 12px;
+  }
+
+  .edu-highlights p {
+    font-size: 0.9rem;
+  }
+
+  .learning-items {
+    gap: 10px;
+  }
+
+  .learning-link {
+    padding: 12px 15px;
+    font-size: 0.9rem;
+  }
+
+  .contact-info {
+    padding: 20px;
   }
 
   .contact-info p {
     font-size: 1rem;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 15px;
   }
 
   .contact-info strong {
     display: block;
     margin-bottom: 5px;
+    margin-right: 0;
+  }
+
+  .contact-cta {
+    padding: 15px;
+    font-size: 0.95rem;
+  }
+
+  .pokemon img {
+    width: 70px;
+    height: 70px;
   }
 }
 
 /* ====== RESPONSIVE - MOBILE ====== */
 @media (max-width: 480px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .header-new {
+    padding: 12px 10px;
+  }
+
   .header-container {
-    gap: 15px;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 0 5px;
   }
 
-  .header-content h1 {
-    font-size: 1.5rem;
-  }
-
-  .subtitle {
-    font-size: 0.9rem;
+  .header-left {
+    flex-shrink: 0;
   }
 
   .profile-pic {
-    width: 100px;
-    height: 100px;
+    width: 85px;
+    height: 85px;
+    border-width: 3px;
+  }
+
+  .header-right {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .header-content h1 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    font-size: 0.75rem;
+    line-height: 1.2;
   }
 
   .header-nav {
     flex-direction: column;
     width: 100%;
+    gap: 5px;
+    justify-content: center;
   }
 
   .header-nav a {
     width: 100%;
-    text-align: center;
+    padding: 8px 10px;
+    font-size: 0.75rem;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 5px;
   }
 
   section {
-    padding: 30px 10px;
+    padding: 20px 12px;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   section h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+  }
+
+  section h2::after {
+    width: 35px;
+    height: 2px;
+    bottom: -2px;
+  }
+
+  section p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  .projects-category {
+    margin: 20px 0;
+    padding: 0 10px;
+  }
+
+  .projects-category h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    justify-items: center;
+  }
+
+  .project-card-enhanced {
+    max-width: 100%;
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+  }
+
+  .project-card-enhanced:hover {
+    transform: translateY(-5px);
+  }
+
+  .project-header {
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  .project-header h4 {
+    font-size: 0.95rem;
+  }
+
+  .status {
+    padding: 3px 8px;
+    font-size: 0.65rem;
+  }
+
+  .project-type {
+    font-size: 0.65rem;
+    padding: 3px 6px;
+  }
+
+  .project-description {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+
+  .project-tech {
+    font-size: 0.8rem;
+  }
+
+  .project-link {
+    font-size: 0.85rem;
+  }
+
+  .empty-state {
+    padding: 25px;
+    font-size: 0.95rem;
+  }
+
+  /* ABOUT SECTION MOBILE */
+  .about-content {
+    padding: 15px;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  .about-details p {
+    font-size: 0.9rem;
+    text-align: left;
+    margin-bottom: 12px;
   }
 
   .highlights {
     grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .highlight-item {
+    background: #f9f9f9;
+    padding: 12px;
+    gap: 10px;
+    border-left-width: 3px;
+  }
+
+  .highlight-item .icon {
+    font-size: 1.3rem;
+    flex-shrink: 0;
+  }
+
+  .highlight-item strong {
+    font-size: 0.85rem;
+  }
+
+  .highlight-item p {
+    font-size: 0.8rem;
+    margin: 3px 0 0 0;
+  }
+
+  /* PROJECTS SECTION MOBILE */
+  #projects {
+    margin: 15px auto;
+  }
+
+  /* RESUME SECTION MOBILE */
+  #resume {
+    margin: 15px auto;
+  }
+
+  .resume-container {
+    padding: 10px;
+  }
+
+  .download-section {
+    margin: 15px 0;
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    border-radius: 6px;
+  }
+
+  .download-note {
+    font-size: 0.75rem;
+    margin-top: 8px;
+  }
+
+  .resume-section {
+    margin: 15px 0;
+    padding: 12px 0;
+  }
+
+  .resume-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+
+  .summary-text {
+    padding: 12px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  .overview-items {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .overview-item {
+    background: #f9f9f9;
+    padding: 12px;
+    border-radius: 6px;
+    border-left-width: 3px;
+  }
+
+  .overview-item .icon {
+    font-size: 1.4rem;
+  }
+
+  .overview-item strong {
+    font-size: 0.85rem;
+  }
+
+  .overview-item p {
+    font-size: 0.8rem;
+  }
+
+  .skills-category {
+    margin-bottom: 15px;
+  }
+
+  .skills-category h5 {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .skill-tag {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    border-radius: 15px;
+  }
+
+  .experience-item {
+    background: #f9f9f9;
+    padding: 12px;
+    border-radius: 6px;
+    border-left-width: 3px;
+    margin-bottom: 12px;
+  }
+
+  .exp-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+
+  .exp-header h4 {
+    font-size: 0.95rem;
+    margin: 0;
+  }
+
+  .exp-date {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    width: auto;
+  }
+
+  .exp-company {
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+  }
+
+  .exp-details {
+    margin: 8px 0;
+  }
+
+  .exp-details li {
+    font-size: 0.85rem;
+    padding-left: 18px;
+    margin-bottom: 5px;
+    line-height: 1.4;
+  }
+
+  .exp-details li:before {
+    font-size: 0.8rem;
   }
 
   .certs-grid {
     grid-template-columns: 1fr;
+    gap: 10px;
   }
 
+  .cert-item {
+    background: #f9f9f9;
+    padding: 12px;
+    border-top-width: 2px;
+    text-align: center;
+  }
+
+  .cert-icon {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+  }
+
+  .cert-item strong {
+    font-size: 0.85rem;
+  }
+
+  .cert-item p {
+    font-size: 0.75rem;
+  }
+
+  .edu-highlights {
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .edu-highlights p {
+    font-size: 0.8rem;
+    margin: 4px 0;
+  }
+
+  .learning-items {
+    gap: 8px;
+  }
+
+  .learning-link {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+    border-radius: 6px;
+  }
+
+  /* CONTACT SECTION MOBILE */
+  #contact {
+    margin: 15px auto;
+  }
+
+  .contact-info {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 15px 0;
+  }
+
+  .contact-info p {
+    font-size: 0.9rem;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    line-height: 1.6;
+  }
+
+  .contact-info strong {
+    display: block;
+    margin-bottom: 4px;
+    margin-right: 0;
+    font-size: 0.85rem;
+  }
+
+  .contact-info a {
+    font-size: 0.9rem;
+  }
+
+  .contact-cta {
+    padding: 12px;
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+
+  /* POKEMON MOBILE */
   .pokemon img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .pokemon {
+    opacity: 0.15;
+  }
+
+  .pokemon:hover {
+    opacity: 0.25;
   }
 }
