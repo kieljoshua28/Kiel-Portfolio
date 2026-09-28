@@ -18,7 +18,7 @@ function Projects() {
     },
     {
       title: 'My Portfolio Website',
-      description: 'Professional portfolio website showcasing projects, experience, and skills. Built with React and Vite featuring modern UI/UX design with responsive layout and smooth animations. Deployed with real-time Pokémon easter eggs!',
+      description: 'Professional portfolio website showcasing projects, experience, and skills. Built with React and Vite featuring modern UI/UX design with responsive layout and smooth animations. Hope you Enjoy my Pokemons!',
       tech: 'React, JavaScript, Vite, CSS, Web Design',
       status: 'Live',
       link: '#',

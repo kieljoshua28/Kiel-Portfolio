@@ -175,6 +175,7 @@ function Resume() {
         {/* EDUCATION */}
         <div className="resume-section">
           <h3>Education</h3>
+          
           <div className="experience-item">
             <div className="exp-header">
               <h4>Bachelor of Science in Computer Engineering</h4>
@@ -186,12 +187,38 @@ function Resume() {
               <p><strong>Achievements:</strong> 1st Place CTF Competition (4th Year) | 2nd Place CTF (3rd Year)</p>
             </div>
           </div>
+
+          <div className="experience-item">
+            <div className="exp-header">
+              <h4>Senior High School - STEM</h4>
+              <span className="exp-date">Completed 2022</span>
+            </div>
+            <p className="exp-company">Sapang Palay National High School</p>
+            <div className="edu-highlights">
+              <p><strong>Achievement:</strong> Best Capstone Project | Graduated With Honors</p>
+            </div>
+          </div>
+
+          <div className="experience-item">
+            <div className="exp-header">
+              <h4>Junior High School - Special Class</h4>
+              <span className="exp-date">Completed 2020</span>
+            </div>
+            <p className="exp-company">Sapang Palay National High School</p>
+            <div className="edu-highlights">
+              <p><strong>Program:</strong> Special Program in Science, Technology, and Engineering</p>
+              <p><strong>Achievement:</strong> Graduated With Honors | 5th Place Division Level Science Research Competition</p>
+            </div>
+          </div>
         </div>
 
         {/* TRAINING & LEARNING */}
         <div className="resume-section">
           <h3>Continuous Learning</h3>
           <div className="learning-items">
+            <a href="https://skillbuilder.aws/training-activity" target="_blank" rel="noopener noreferrer" className="learning-link">
+              ☁️ AWS Skill Builder - Cloud Practitioner Training
+            </a>
             <a href="https://tryhackme.com/p/BASIC28" target="_blank" rel="noopener noreferrer" className="learning-link">
               🔗 TryHackMe - 30+ SOC Analyst Rooms
             </a>
